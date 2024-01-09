@@ -23,7 +23,13 @@
     margin:25px 10px;
     gap:10px;
 }
-
+@media screen and (max-width:767px) {
+    .analysis-container{
+        display: grid;
+        grid-template-columns: repeat(1fr,2);
+    }
+    
+}
 .hr{
     background-color: rgba(128, 128, 128, 0.21);
     width: 1px;

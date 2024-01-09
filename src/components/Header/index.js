@@ -1,6 +1,15 @@
+import Popup from 'reactjs-popup';
+
+import Sidebar from '../sidebar';
+
 import { IoCalendar } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { RxCross1 } from "react-icons/rx";
+import { MdDashboardCustomize } from "react-icons/md";
+
 
 import "./index.css"
+
 
 const Header =()=>{
     return(
@@ -14,6 +23,25 @@ const Header =()=>{
                     <h1>Good Morning Mouli</h1>
                     <p>{`Here are your stats for Today,  ${new Date().getDate()} ${new Date().getMonth()+1} ${new Date().getFullYear()}`}</p>
                 </div>
+                <Popup 
+                modal
+                trigger={
+                    <button className="Hammburger-icon">
+                        <GiHamburgerMenu/>
+                    </button>
+                }
+                >
+                    {close=>(
+                        <div className="popup-container">
+                            <RxCross1 className='cross' onClick={()=>close()}/>
+                            <div  className={false ?"dash-board-container":"dash-board-container active"} >
+                            <MdDashboardCustomize  size={20} />
+                            <p className="dash-board">DashBoard</p>
+            </div>
+                        <Sidebar/>
+                     </div>
+                    )}
+                </Popup>
             </div>
             <div className="dash-board-date-selector-constainer">
                 <div className="date-seletor">
@@ -26,6 +54,7 @@ const Header =()=>{
                     <option >now</option>
                 </select>
             </div>
+            
         </header>
     )
    

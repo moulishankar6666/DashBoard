@@ -8,9 +8,13 @@
     border-right: solid rgba(128, 128, 128, 0.434) 1.5px;
     padding: 15px 10px 10px 20px;
     position: relative;
-
-
 }
+@media screen and (max-width:767px) {
+    .side-bar{
+        display: none;
+    }
+}
+
 .dash-board-logo{
     width: 130px;
 }
@@ -79,6 +83,7 @@
     border-radius: 10px;
     gap:10px;
     padding: 5px;
+    font-size: 14px;
     font-weight: 500;
 }
 .profile-container{

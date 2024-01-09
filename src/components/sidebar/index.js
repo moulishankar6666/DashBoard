@@ -14,7 +14,7 @@ import "./index.css"
 
 
 const Sidebar =()=>{
-    const [activeTab,setActiveTab]=useState("")
+    const [activeTab,setActiveTab]=useState("DashBoard")
     return(
         <aside className="side-bar">
             <img className="dash-board-logo" src="https://assets.website-files.com/6076eab79e12ed151f2a03f6/6076eec561cd5d0f52ca83f8_Branding.svg" alt="logo"/>
@@ -22,37 +22,37 @@ const Sidebar =()=>{
                 <FiSearch className="search-icon" />
                 <input placeholder="Search..." type="search"/>
             </div>
-            <div className="dash-board-container" >
+            <div onClick={()=>setActiveTab("DashBoard")} className={activeTab!=="DashBoard"?"dash-board-container":"dash-board-container active"} >
                 <MdDashboardCustomize  size={20} />
                 <p className="dash-board">DashBoard</p>
             </div>
             <hr className="hr-line"/>
             <div className="tabs-container">
-                <div className={true?"navigation-tabs":"navigation-tabs active"}>
+                <div onClick={()=>setActiveTab("Conversations")} className={activeTab!=="Conversations"?"navigation-tabs":"navigation-tabs active"}>
                 <IoChatbubble size={20} />
                 <div>Conversations</div>
                 </div>
-                <div className="navigation-tabs">
+                <div onClick={()=>setActiveTab("Automations")} className={activeTab!=="Automations"?"navigation-tabs":"navigation-tabs active"}>
                 <TbSettingsAutomation size={20} />
                 <div>Automations</div>
                 </div>
-                <div className="navigation-tabs">
+                <div onClick={()=>setActiveTab("Campaigns")} className={activeTab!=="Campaigns"?"navigation-tabs":"navigation-tabs active"}>
                 <MdCampaign size={20} />
                 <div>Campaigns</div>
                 </div>
-                <div className="navigation-tabs">
+                <div onClick={()=>setActiveTab("Popup")} className={activeTab!=="Popup"?"navigation-tabs":"navigation-tabs active"}>
                 <HiOutlineSquare2Stack size={20} />
                 <div>Popup</div>
                 </div>
-                <div className="navigation-tabs">
+                <div onClick={()=>setActiveTab("Live Chat")} className={activeTab!=="Live Chat"?"navigation-tabs":"navigation-tabs active"}>
                 <MdOutlineLiveTv  size={20} />
                 <div>Live Chat</div>
                 </div>
-                <div className="navigation-tabs">
+                <div onClick={()=>setActiveTab("Segments")} className={activeTab!=="Segments"?"navigation-tabs":"navigation-tabs active"}>
                 <PiLineSegmentsBold size={20} />
                 <div>Segments</div>
                 </div>
-                <div className="navigation-tabs">
+                <div onClick={()=>setActiveTab("Integrations")} className={activeTab!=="Integrations"?"navigation-tabs":"navigation-tabs active"}>
                 <GrIntegration size={20} />
                 <div>Integrations</div>
                 </div>
