@@ -1,0 +1,61 @@
+.dash-baord-container{
+    display: flex;
+    flex-direction: row;
+}
+.desktop-slide-bar{
+    display: flex;
+}
+@media screen and (max-width:767px) {
+    .desktop-slide-bar{
+        display: none;
+    }
+    
+}
+.section{
+    min-height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.analysis-container{
+    display: flex;
+    justify-content:space-between;
+    margin:25px 10px;
+    gap:10px;
+}
+
+.hr{
+    background-color: rgba(128, 128, 128, 0.21);
+    width: 1px;
+}
+
+.profit-loss-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+.profit-loss-container .loss{
+    background-color: rgba(214, 110, 110, 0.244);
+    padding: 5px 8px;
+    color: red;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.profit-loss-container .profit{
+    background-color: rgba(110, 214, 110, 0.244);
+    padding: 5px 8px;
+    color: green;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.line-chart-container{
+    margin: 10px 10px;
+}
+.line-chart{
+    max-width: 800px;
+}

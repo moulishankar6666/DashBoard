@@ -1,0 +1,90 @@
+.history-container{
+    width: 75vw;
+    margin:20px 15px;
+}
+
+.history-section-tabs-list{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.history-section-tabs-list .tab-button{
+    padding: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 800;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.history-section-tabs-list .month-selection{
+    padding: 5px;
+    border: solid #000 1px ; 
+    outline: none;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.history-items-list{
+    list-style-type: none;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.history-items-list .history-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin-bottom: 15px;
+
+}
+
+.history-item-left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.history-item-left-info .top{
+ display:flex;
+ align-items: center;
+ gap: 20px;
+ font-weight: 600;
+}
+ .horizontal-line{
+    height: 15px;
+    width: 0.5px;
+    background-color: rgba(128, 128, 128, 0.477);
+}
+.history-item-left-info .bottom{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+    margin-top: 5px;
+   }
+
+
+.history-item-right-info>p{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: end;
+    
+}
+.history-item-right-info>.bottom{
+ display: flex;
+ align-items: center;
+ font-size: 13px;
+ gap: 10px;
+ margin-top: 5px;
+}
+
+
+
+.active-tab{
+    border-bottom: solid blue 3px;
+}
