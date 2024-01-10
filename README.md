@@ -4,11 +4,11 @@
 
 ## Objective
 
-    Define the main goal or purpose of the Assignment
+    Build statistics dashboard 
 
 ## Tech Stack
 
-    List the primary technologies, languages required for the Assignment
+    react.js and css
 
 ## Completion Instructions
 
@@ -16,42 +16,41 @@
 
 #### Must Have
 
-    List the critical features or tasks mentioned in the Assignment
+    Sidebar, tabs and graphs is mandatory
 
 #### Nice to Have
 
-    List the bonus features or tasks mentioned in the Assignment, if any
+    Gauge, search, date selectors is optional
 
 ### Guidelines to develop a project
 
 #### Must Have
 
-    List the necessary guidelines to follow while developing the project, mentioned in the Assignment, if any
+    Alignment, colours (gradients preferred), typography is important
+    The website needs to be mobile responsive
 
-#### Nice to Have
 
-    List the additional/suggested guidelines to follow while developing the project, mentioned in the Assignment, if any
 
 ### Submission Instructions
 
 #### Must Have
 
-    List the Instructions to follow while submitting the project mentioned in the Assignment, if any
+    upload your code to GitHub and host the application in Netlify or Vercel
 
 #### Nice to Have
 
-    List the suggested instructions to follow while submitting the project mentioned in the Assignment, if any
+     Vercel
 
 ## Resources
 
 ### Design files
 
-    List the references of design files required for the Assignment
+    Desing templete attached in assinment document
 
 ### APIs
 
-    List the APIs, providing any relevant endpoints, documentation links, or access keys, required for the Assignment if any
+    No
 
 ### Third-party packages
 
-    List the Third-party packages required for the Assignment, if any
+    chart.js,reactjs-popup,react-icons
